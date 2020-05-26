@@ -1,0 +1,39 @@
+.section {
+    &.section-1 {
+        .part-1{
+            background: url(../images/Bricklane_Ifte_Choudhury.jpg) left top no-repeat;
+            background-size: cover;
+            height: 90vh;
+        }
+        .part-2{
+            background: $color-yellow;
+            height: 250px;
+
+            .centered-box {
+                background: white;
+                min-height: 300px;
+                width: 74%;
+                margin: 0 auto;
+                border-radius: 10px;
+                transform: translateY(-80px);
+
+                .body{
+                    height: 180px;
+
+                    .imagePart{
+                        float: left;
+                        img {
+                            padding: 20px;
+                            padding-top: 0;
+                            width: 14vw;
+                            transform: translateY(-15%);
+                        }
+                    }
+                    .textPart{
+                    }
+                }
+            }
+
+        }
+    }
+}
