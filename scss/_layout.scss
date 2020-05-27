@@ -1,5 +1,5 @@
 .section {
-    &.section-1 {
+    &.section-home {
         .part-1{
             background: url(../images/Bricklane_Ifte_Choudhury.jpg) left top no-repeat;
             background-size: cover;
@@ -7,7 +7,6 @@
         }
         .part-2{
             background: $color-yellow;
-            height: 250px;
 
             .centered-box {
                 background: white;
@@ -18,22 +17,47 @@
                 transform: translateY(-80px);
 
                 .body{
-                    height: 180px;
+                    min-height: 180px;
+                    @include clearfix;
 
                     .imagePart{
                         float: left;
+                        width: 25%;
+                        text-align: center;
                         img {
-                            padding: 20px;
                             padding-top: 0;
                             width: 14vw;
                             transform: translateY(-15%);
+                            @media (max-width: 1060px) {
+                                width: 30%;
+                            }
+                            @media (max-width: 610px) {
+                                width: 50%;
+                            }
+                        }
+                        @media (max-width: 1060px) {
+                            float: none;
+                            width: 100%;
+                            margin-bottom: 10px;
                         }
                     }
                     .textPart{
+                        float: left;
+                        width: 75%;
+                        @media (max-width: 1060px) {
+                            float: none;
+                            width: 100%;
+                        }
                     }
                 }
             }
 
         }
+    }
+    &.section-about {
+        height: 100vh;
+        background: url(../images/Untitled-2.png) left top no-repeat;
+        background-size: cover;
+        margin-top: -20px;
     }
 }
