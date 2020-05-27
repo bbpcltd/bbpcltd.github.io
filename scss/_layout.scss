@@ -4,6 +4,9 @@
             background: url(../images/Bricklane_Ifte_Choudhury.jpg) left top no-repeat;
             background-size: cover;
             height: 90vh;
+            @media only screen and (max-width: 645px){
+                height: 72vh;
+            }
         }
         .part-2{
             background: $color-yellow;
@@ -55,9 +58,50 @@
         }
     }
     &.section-about {
-        height: 100vh;
+        min-height: 100vh;
         background: url(../images/Untitled-2.png) left top no-repeat;
         background-size: cover;
         margin-top: -20px;
+        @media only screen and (max-width: 645px){
+            min-height: 50vh;
+            background: white;
+        }
+
+        .body {
+            width: 35%;
+            @media only screen and (max-width: 1000px){
+                width: 45%;
+            }
+            @media only screen and (max-width: 760px){
+                width: 55%;
+            }
+            @media only screen and (max-width: 645px){
+                width: 100%;
+            }
+            .heading {
+                padding-top: 100px;
+
+                h1 {
+                    @media only screen and (max-width: 690px) {
+                        font-size: 2.8rem;
+                    }
+                    span {
+                        @media only screen and (max-width: 690px) {
+                            font-size: 6rem;
+                        }
+                    }
+                }
+            }
+
+            .text p {
+                padding: 50px;
+                padding-bottom: 80px;
+                width: 120%;
+
+                @media only screen and (max-width: 1000px){
+                    width: 100%;
+                }
+            }
+        }
     }
 }
