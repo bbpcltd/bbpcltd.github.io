@@ -1,5 +1,5 @@
 .section {
-    &.section-home {
+    &-home {
         .part-1{
             background: url(../images/Bricklane_Ifte_Choudhury.jpg) left top no-repeat;
             background-size: cover;
@@ -58,7 +58,7 @@
         }
     }
 
-    &.section-about {
+    &-about {
         min-height: 100vh;
         background: url(../images/Untitled-2.png) left top no-repeat;
         background-size: cover;
@@ -106,7 +106,7 @@
         }
     }
 
-    &.section-mission {
+    &-mission {
         background: linear-gradient(to bottom, $color-dark 20%, $color-yellow 20%);
         @media only screen and (max-width: 690px) {
             background: linear-gradient(to bottom, $color-dark 30%, $color-yellow 30%);
@@ -194,6 +194,77 @@
                 padding-right: 20px;
                 padding-left: 20px;
                 text-align: center;
+            }
+        }
+    }
+
+    &-events {
+        background: $color-black;
+        padding-bottom: 40px;
+
+        .heading {
+            padding-top: 50px;
+
+            h1 {
+                color: $color-text-light;
+
+                span {
+                    color: $color-text-light;
+                }
+            }
+        }
+        .reading {
+            background: rgba($color-dark-light, 0.2);
+            text-align: center;
+            width: 98%;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 80px;
+            position: relative;
+            .date {
+                position: absolute;
+                top: -14%;
+                left: 5%;
+                background: white;
+
+                @media only screen and (max-width: 815px) {
+                    transform: scale(0.7);
+                    top: -24%;
+                    left: 3%;
+                }
+                @media only screen and (max-width: 690px) {
+                    transform: scale(0.5);
+                    top: -30%;
+                    left: 0;
+                }
+            }
+            .body {
+                img {
+                    width: 60%;
+                    margin-top: -6.4%;
+                }
+                h1 {
+                    font-size: 3rem;
+                    color: white;
+                    margin-top: -2%;
+                    padding-bottom: 6%;
+                }
+            }
+            .button {
+                position: absolute;
+                bottom: -4.6%;
+                right: 10%;
+
+                @media only screen and (max-width: 815px) {
+                    transform: scale(0.8);
+                    bottom: -8%;
+                    right: 10%;
+                }
+                @media only screen and (max-width: 690px) {
+                    transform: scale(0.7);
+                    bottom: -10%;
+                    right: 10%;
+                }
             }
         }
     }

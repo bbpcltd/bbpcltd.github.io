@@ -13,3 +13,14 @@
 .buttonPart {
     text-align: center;
 }
+.btn-2 {
+    background: $color-orange-2;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding: 18px 60px;
+
+    @media only screen and (max-width: 690px) {
+        font-size: 1.5rem;
+    }
+}
