@@ -268,4 +268,83 @@
             }
         }
     }
+
+    &-members {
+        padding: 200px 50px 50px;
+        background: $color-black;
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            .carousel-item {
+                width: 70%;
+                margin: auto;
+                min-height: 20vh;
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                height: 100px;
+                width: 100px;
+                outline: black;
+                background-size: 100%, 100%;
+                border-radius: 50%;
+                border: 1px solid black;
+                background-image: none;
+                opacity: 0.2;
+            }
+
+            .carousel-control-next-icon::after
+            {
+                content: '>';
+                font-size: 55px;
+                color: $color-dark;
+            }
+
+            .carousel-control-prev-icon::after {
+                content: '<';
+                font-size: 55px;
+                color: $color-dark;
+            }
+
+            .floatingPart {
+                @include clearfix;
+
+                .leftPart {
+                    width: 46%;
+                    float: left;
+                    padding-right: 4%;
+                    text-align: center;
+
+                    @media only screen and (max-width: 900px){
+                        float: none;
+                        width: 98%;
+                        padding-right: 0;
+                        padding-bottom: 20px;
+                    }
+    
+                    img {
+                        width: 98%;
+
+                        @media only screen and (max-width: 900px){
+                            width: 90%;
+                        }
+                    }
+                }
+                .rightPart {
+                    width: 46%;
+                    float: left;
+                    padding-left: 4%;
+
+                    @media only screen and (max-width: 900px){
+                        float: none;
+                        width: 98%;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
 }
