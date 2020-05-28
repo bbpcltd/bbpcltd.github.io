@@ -57,6 +57,7 @@
 
         }
     }
+
     &.section-about {
         min-height: 100vh;
         background: url(../images/Untitled-2.png) left top no-repeat;
@@ -101,6 +102,98 @@
                 @media only screen and (max-width: 1000px){
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    &.section-mission {
+        background: linear-gradient(to bottom, $color-dark 20%, $color-yellow 20%);
+        @media only screen and (max-width: 690px) {
+            background: linear-gradient(to bottom, $color-dark 30%, $color-yellow 30%);
+        }
+
+        .topPart {
+            @include clearfix;
+            .heading {
+                float: left;
+                width: 35%;
+                margin-top: 15%;
+
+                h1 {
+                    @media only screen and (max-width: 690px) {
+                        font-size: 2.8rem;
+                        color: $color-text-light;
+                    }
+
+                    span {
+                        @media only screen and (max-width: 690px) {
+                            font-size: 6rem;
+                            color: $color-text-light;
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 690px) {
+                    float: none;
+                    width: 100%;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+            }
+            .image {
+                float: left;
+                width: 65%;
+                text-align: right;
+                img {
+                    width: 100%;
+                }
+
+                @media only screen and (max-width: 690px) {
+                    float: none;
+                    width: 100%;
+                    margin-top: -8%;
+                }
+            }
+        }
+        .text {
+            z-index: 5;
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 50px;
+            padding-top: 10px;
+            position: relative;
+
+            @media only screen and (max-width: 690px) {
+                padding: 12px;
+                margin-top: 30px;
+                padding-bottom: 20px;
+                width: 90%;
+            }
+            
+            img {
+                position: absolute;
+                top: -80%;
+                left: 0;
+                width: 100%;
+                height: 170%;
+                background: white;
+                opacity: 0.5;
+                z-index: -2;
+                border-radius: 6px;
+
+                @media only screen and (max-width: 690px) {
+                    padding: 12px;
+                    margin-top: 30px;
+                    top: -50%;
+                    height: 130%;
+                }
+            }
+
+            p {
+                padding-right: 20px;
+                padding-left: 20px;
+                text-align: center;
             }
         }
     }
