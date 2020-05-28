@@ -488,7 +488,7 @@ h3 {
 }
 
 .section-members {
-  padding: 200px 50px 50px;
+  padding: 200px 50px 150px;
   background: #050505;
 }
 
@@ -572,6 +572,36 @@ h3 {
     width: 98%;
     padding-left: 0;
   }
+}
+
+.section-footer {
+  height: 100px;
+  background: url("../images/Group 929.png") left top no-repeat;
+  background-size: contain;
+  background-color: #6f6f6f;
+}
+
+.section-footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section-footer ul {
+  list-style: none;
+  float: right;
+  margin-top: 3.4rem;
+}
+
+.section-footer ul li {
+  display: inline-block;
+  padding: 5px 14px;
+}
+
+.section-footer ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
 }
 
 .btn {

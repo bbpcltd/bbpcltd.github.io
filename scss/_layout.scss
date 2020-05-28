@@ -270,7 +270,7 @@
     }
 
     &-members {
-        padding: 200px 50px 50px;
+        padding: 200px 50px 150px;
         background: $color-black;
 
         .container {
@@ -343,6 +343,29 @@
                         width: 98%;
                         padding-left: 0;
                     }
+                }
+            }
+        }
+    }
+
+    &-footer {
+        height: 100px;
+        background: url("../images/Group 929.png") left top no-repeat;
+        background-size: contain;
+        background-color: #6f6f6f;
+        @include clearfix;
+
+        ul {
+            list-style: none;
+            float: right;
+            margin-top: 3.4rem;
+            li {
+                display: inline-block;
+                padding: 5px 14px;
+                a {
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
