@@ -291,6 +291,7 @@ h3 {
 .section-mission {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #0B0A0A), color-stop(20%, #F4CE00));
   background: linear-gradient(to bottom, #0B0A0A 20%, #F4CE00 20%);
+  margin-top: -10px;
 }
 
 @media only screen and (max-width: 690px) {
