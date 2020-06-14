@@ -616,9 +616,15 @@ h3 {
 }
 
 .section-about-footer .part1, .section-about-footer .part2 {
-  width: 60%;
+  width: 65%;
   padding: 30px;
   margin: auto;
+}
+
+@media (max-width: 960px) {
+  .section-about-footer .part1, .section-about-footer .part2 {
+    width: 80%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -628,8 +634,24 @@ h3 {
 }
 
 .section-about-footer .part1 {
-  padding-top: 50px;
-  width: 56%;
+  padding-top: 150px;
+  width: 60%;
+  -webkit-transform: translateX(-16px);
+          transform: translateX(-16px);
+}
+
+@media (max-width: 960px) {
+  .section-about-footer .part1 {
+    width: 74%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (max-width: 560px) {
+  .section-about-footer .part1 {
+    width: 94%;
+  }
 }
 
 @media (max-width: 560px) {
