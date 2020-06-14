@@ -371,4 +371,36 @@
             }
         }
     }
+
+    &-about {
+        &-header {
+            img {
+                width: 100%;
+            }
+        }
+        &-footer {
+            min-height: 100vh;
+            background-color: #F8F9C7;
+            text-align: center;
+
+            img, p {
+                width: 60%;
+                padding: 30px;
+                margin: auto;
+                @media (max-width: 560px) {
+                    width: 100%;
+                }
+            }
+            
+            img {
+                padding-top: 50px;
+            }
+            p {
+                @media (max-width: 560px) {
+                   font-size: 12px; 
+                }
+            }
+
+        }
+    }
 }

@@ -605,6 +605,38 @@ h3 {
   color: white;
 }
 
+.section-about-header img {
+  width: 100%;
+}
+
+.section-about-footer {
+  min-height: 100vh;
+  background-color: #F8F9C7;
+  text-align: center;
+}
+
+.section-about-footer img, .section-about-footer p {
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+}
+
+@media (max-width: 560px) {
+  .section-about-footer img, .section-about-footer p {
+    width: 100%;
+  }
+}
+
+.section-about-footer img {
+  padding-top: 50px;
+}
+
+@media (max-width: 560px) {
+  .section-about-footer p {
+    font-size: 12px;
+  }
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
