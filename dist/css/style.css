@@ -615,24 +615,25 @@ h3 {
   text-align: center;
 }
 
-.section-about-footer img, .section-about-footer p {
+.section-about-footer .part1, .section-about-footer .part2 {
   width: 60%;
   padding: 30px;
   margin: auto;
 }
 
 @media (max-width: 560px) {
-  .section-about-footer img, .section-about-footer p {
+  .section-about-footer .part1, .section-about-footer .part2 {
     width: 100%;
   }
 }
 
-.section-about-footer img {
+.section-about-footer .part1 {
   padding-top: 50px;
+  width: 56%;
 }
 
 @media (max-width: 560px) {
-  .section-about-footer p {
+  .section-about-footer .part2 {
     font-size: 12px;
   }
 }

@@ -383,7 +383,7 @@
             background-color: #F8F9C7;
             text-align: center;
 
-            img, p {
+            .part1, .part2 {
                 width: 60%;
                 padding: 30px;
                 margin: auto;
@@ -392,10 +392,11 @@
                 }
             }
             
-            img {
+            .part1 {
                 padding-top: 50px;
+                width: 56%;
             }
-            p {
+            .part2 {
                 @media (max-width: 560px) {
                    font-size: 12px; 
                 }
