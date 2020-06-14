@@ -660,6 +660,37 @@ h3 {
   }
 }
 
+.section-events-header {
+  background: #FDFCEE;
+}
+
+.section-events-header .part {
+  margin: auto;
+  width: 70%;
+  padding: 30px;
+  padding-top: 10px;
+}
+
+.section-events-middle {
+  background: #FDFCEE;
+  text-align: center;
+}
+
+.section-events-middle img {
+  width: 70%;
+}
+
+.section-events-last {
+  background: #FDFCEE;
+  min-height: 100vh;
+}
+
+.section-events-last h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 46px;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
