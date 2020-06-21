@@ -18,3 +18,29 @@ $color-text-light: #ccc;
         clear: both;
     }
 }
+
+// Grid
+.row {
+    @include clearfix;
+    margin: -20px 0;
+    .col {
+       padding: 0 20px;
+       float: left;
+       box-sizing: border-box;
+       &.x-50 {
+          width: 50%;
+       }
+       &.x-100 {
+          width: 100%;
+       }
+    }
+ }
+
+ .align-center {
+    text-align: center;
+ }
+
+// FONTS
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
