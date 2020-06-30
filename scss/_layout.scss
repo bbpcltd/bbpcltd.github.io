@@ -1,3 +1,53 @@
+.social-navi{
+	//height: 100vh;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+	.navi-nav{
+		a{
+			height: 50px;
+			width: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			transition: .2s;
+		}
+		.fa-facebook-f{
+			background-color: $facebook;
+			&:hover{
+				background-color: darken($facebook, 10%);
+			}
+		}
+		.fa-twitter{
+			background-color: $twitter;
+			&:hover{
+				background-color: darken($twitter, 10%);
+			}
+		}
+		.fa-linkedin-in{
+			background-color: $linkedIn;
+			&:hover{
+				background-color: darken($linkedIn, 10%);
+			}
+		}
+		.fa-envelope{
+			background-color: $mail;
+			&:hover{
+				background-color: darken($mail, 10%);
+			}
+		}
+	}
+}
+
 .section {
     &-home {
         margin-top: -20vh;
@@ -49,7 +99,7 @@
                         float: left;
                         width: 50%;
                         margin-left: 10%;
-                        margin-top: -8%;
+                        margin-top: -1%;
                         margin-bottom: 2%;
                         @media (max-width: 1060px) {
                             float: none;
@@ -289,41 +339,42 @@
 
         .container {
             background: white;
-            padding: 20px;
             border-radius: 10px;
 
             .carousel-item {
-                width: 70%;
-                margin: auto;
                 min-height: 20vh;
+
+                img{
+                    width: 100%;
+                }
             }
 
             .carousel-control-prev-icon,
             .carousel-control-next-icon {
-                height: 100px;
-                width: 100px;
+                height: 70px;
+                width: 70px;
                 outline: black;
                 background-size: 100%, 100%;
                 border-radius: 50%;
                 border: 1px solid black;
                 background-image: none;
-                opacity: 0.2;
+                opacity: 0.3;
             }
 
             .carousel-control-next-icon::after
             {
                 content: '>';
-                font-size: 55px;
+                font-size: 40px;
                 color: $color-dark;
             }
 
             .carousel-control-prev-icon::after {
                 content: '<';
-                font-size: 55px;
+                font-size: 40px;
                 color: $color-dark;
             }
 
-            .floatingPart {
+            /*.floatingPart {
                 @include clearfix;
 
                 .leftPart {
@@ -358,7 +409,7 @@
                         padding-left: 0;
                     }
                 }
-            }
+            }*/
         }
     }
 
@@ -368,21 +419,6 @@
         background-size: contain;
         background-color: #6f6f6f;
         @include clearfix;
-
-        ul {
-            list-style: none;
-            float: right;
-            margin-top: 50px;
-            li {
-                display: inline-block;
-                padding: 5px 14px;
-                a {
-                    font-size: 2rem;
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-        }
     }
 
     &-about {
