@@ -50,9 +50,10 @@
 
 .section {
     &-home {
-        margin-top: -20vh;
+        //margin-top: -20vh;
         .part-1{
             background: url(../images/Bricklane_Ifte_Choudhury.jpg) left top no-repeat;
+            background-attachment: fixed;
             background-size: cover;
             height: 90vh;
             @media only screen and (max-width: 645px){
@@ -97,11 +98,16 @@
                     }
                     .textPart{
                         float: left;
-                        width: 50%;
-                        margin-left: 10%;
+                        width: 60%;
+                        margin-left: 2%;
                         margin-top: -1%;
                         margin-bottom: 2%;
+                        padding-right: 0px;
+                        p {
+                            padding-right: 0;
+                        }
                         @media (max-width: 1060px) {
+                            margin-left: 6%;
                             float: none;
                             width: 100%;
                         }
@@ -159,9 +165,11 @@
                     padding: 50px;
                     padding-bottom: 80px;
                     width: 120%;
+                    font-size: 1.904rem;
     
                     @media only screen and (max-width: 1000px){
                         width: 100%;
+                        font-size: 1.6rem;
                     }
                 }
             }
@@ -184,6 +192,7 @@
                 margin-top: 15%;
 
                 h1 {
+                    font-size: 4rem;
                     @media only screen and (max-width: 690px) {
                         font-size: 2.8rem;
                         color: $color-text-light;

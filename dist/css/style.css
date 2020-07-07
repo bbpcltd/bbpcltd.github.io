@@ -43,10 +43,10 @@ html {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: 'Work Sans', sans-serif;
   padding: 60px 50px 10px 10px;
-  line-height: 2rem;
+  line-height: 2.6rem;
   text-align: justify;
 }
 
@@ -74,10 +74,11 @@ h1 {
   text-align: center;
   padding: 40px 10px;
   font-family: 'montserrat';
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   position: relative;
   font-weight: 900;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  color: black;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (max-width: 690px) {
@@ -88,6 +89,7 @@ h1 {
 }
 
 h1 span {
+  color: black;
   position: absolute;
   font-size: 4.8rem;
   top: 5%;
@@ -95,8 +97,8 @@ h1 span {
   width: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  opacity: 0.25;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  opacity: 0.12;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   pointer-events: none;
   padding-right: 10px;
   padding-left: 10px;
@@ -250,12 +252,9 @@ h3 {
   background-color: #c23321;
 }
 
-.section-home {
-  margin-top: -20vh;
-}
-
 .section-home .part-1 {
   background: url(../images/Bricklane_Ifte_Choudhury.jpg) left top no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 90vh;
 }
@@ -325,14 +324,20 @@ h3 {
 
 .section-home .part-2 .centered-box .body .textPart {
   float: left;
-  width: 50%;
-  margin-left: 10%;
+  width: 60%;
+  margin-left: 2%;
   margin-top: -1%;
   margin-bottom: 2%;
+  padding-right: 0px;
+}
+
+.section-home .part-2 .centered-box .body .textPart p {
+  padding-right: 0;
 }
 
 @media (max-width: 1060px) {
   .section-home .part-2 .centered-box .body .textPart {
+    margin-left: 6%;
     float: none;
     width: 100%;
   }
@@ -406,11 +411,13 @@ h3 {
   padding: 50px;
   padding-bottom: 80px;
   width: 120%;
+  font-size: 1.904rem;
 }
 
 @media only screen and (max-width: 1000px) {
   .section-about > div .body .text p {
     width: 100%;
+    font-size: 1.6rem;
   }
 }
 
@@ -437,6 +444,10 @@ h3 {
   float: left;
   width: 35%;
   margin-top: 15%;
+}
+
+.section-mission .topPart .heading h1 {
+  font-size: 4rem;
 }
 
 @media only screen and (max-width: 690px) {
