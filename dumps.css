@@ -1,0 +1,149 @@
+padding: 200px 50px 150px;
+        background: $color-black;
+        
+        .container {
+            background: white;
+            border-radius: 40px;
+            padding: 0;
+            box-shadow: 0 0 15px $color-yellow;
+
+            @media (max-width: 767px){
+                max-width: 100%;
+            }
+
+            .carousel-inner{
+                border-radius: 40px;
+                height: 430px;
+                position: relative;
+                //background-color: #f4b4a1;
+                //background: linear-gradient($color-yellow, $color-orange, $color-yellow);
+
+                @media (max-width: 1200px){
+                    height: 500px;
+                }
+                @media (max-width: 767px){
+                    height: 550px;
+                }
+                @media (max-width: 633px){
+                    height: 620px;
+                }
+                @media (max-width: 515px){
+                    height: 680px;
+                }
+                @media (max-width: 445px){
+                    height: 760px;
+                }
+
+
+                .carousel-item {
+                    position: relative;
+                    height: 100%;
+
+                    &:nth-child(odd) {
+                        background-color: $color-yellow;
+                    }
+                    &:nth-child(even) {
+                        background-color: $color-orange;
+                    }
+
+                    .textQuote{
+                        position: absolute;
+                        top: 50%;
+                        height: 100%;
+                        width: 100%;
+                        .tfy {
+                            transform: translateY(-50%);
+                        }
+                        
+                    }
+                    
+    
+                    .text {
+                        font-size: 1.6rem;
+                        font-family: 'Work Sans', sans-serif;
+                        line-height: 2.6rem;
+                        padding: 15px 14%;
+                        text-align: center;
+                        @media (max-width: 633px){
+                            padding: 15px 10px;
+                        }
+
+                        //background: ;
+
+                        &-english {
+                            //background-color: #f4b4a1;
+                        }
+                        &-bangla {
+                            //background-color: #143d59;
+                        }
+                    }
+    
+                    /*img{
+                        width: 100%;
+                    }*/
+                }
+    
+                /*.carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    height: 70px;
+                    width: 70px;
+                    outline: black;
+                    background-size: 100%, 100%;
+                    border-radius: 50%;
+                    border: 1px solid black;
+                    background-image: none;
+                    opacity: 0.3;
+                }
+    
+                .carousel-control-next-icon::after
+                {
+                    content: '>';
+                    font-size: 40px;
+                    color: $color-dark;
+                }
+    
+                .carousel-control-prev-icon::after {
+                    content: '<';
+                    font-size: 40px;
+                    color: $color-dark;
+                }*/
+    
+                /*.floatingPart {
+                    @include clearfix;
+    
+                    .leftPart {
+                        width: 46%;
+                        float: left;
+                        padding-right: 4%;
+                        text-align: center;
+    
+                        @media only screen and (max-width: 900px){
+                            float: none;
+                            width: 98%;
+                            padding-right: 0;
+                            padding-bottom: 20px;
+                        }
+        
+                        img {
+                            width: 98%;
+    
+                            @media only screen and (max-width: 900px){
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .rightPart {
+                        width: 46%;
+                        float: left;
+                        padding-left: 4%;
+    
+                        @media only screen and (max-width: 900px){
+                            float: none;
+                            width: 98%;
+                            padding-left: 0;
+                        }
+                    }
+                }*/
+            }
+        }
+    
