@@ -544,7 +544,7 @@ h3 {
 }
 
 .section-events .heading {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .section-events .heading h1 {
@@ -608,6 +608,15 @@ h3 {
   right: 10%;
 }
 
+.section-events .reading .button a {
+  font-size: 180%;
+}
+
+.section-events .reading .button a:hover {
+  color: white;
+  background-color: #e64200;
+}
+
 @media only screen and (max-width: 815px) {
   .section-events .reading .button {
     -webkit-transform: scale(0.8);
@@ -630,6 +639,7 @@ h3 {
   padding-top: 200px;
   padding-bottom: 0;
   background: #050505;
+  height: 1000px;
 }
 
 .section-members .slider {
@@ -1119,5 +1129,22 @@ h3 {
   .btn-2 {
     font-size: 1.5rem;
   }
+}
+
+.upperStryle {
+  position: relative;
+}
+
+.upperStryle::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/Line 38.png");
+  background-size: cover;
+  height: 60px;
+  width: 1.4px;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: scaleX(1.3);
+          transform: scaleX(1.3);
 }
 /*# sourceMappingURL=style.css.map */

@@ -279,7 +279,7 @@
         padding-bottom: 40px;
 
         .heading {
-            padding-top: 50px;
+            padding-top: 100px;
 
             h1 {
                 color: $color-text-light;
@@ -331,6 +331,15 @@
                 bottom: -4.6%;
                 right: 10%;
 
+                a{
+                    font-size: 180%;
+                }
+
+                a:hover {
+                    color: white;
+                    background-color: darken($color-orange-2, 5);
+                }
+
                 @media only screen and (max-width: 815px) {
                     transform: scale(0.8);
                     bottom: -8%;
@@ -349,6 +358,7 @@
         padding-top: 200px;
         padding-bottom: 0;
         background: $color-black;
+        height: 1000px;
 
         .slider {
             margin: 0 auto;
