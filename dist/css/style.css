@@ -690,6 +690,7 @@ h3 {
   height: 100%;
   position: absolute;
   width: 100%;
+  border-radius: 8px;
 }
 
 .section-members .slider .slide_viewer .slide_group .slide:first-child {
@@ -711,6 +712,10 @@ h3 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-color: #fae780;
+  padding: 35px 15px;
+  opacity: 0.6;
+  border-radius: 8px;
 }
 
 .section-members .slider .slide_viewer .slide_group .slide .innerPart p {
