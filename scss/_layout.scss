@@ -52,12 +52,26 @@
     &-home {
         //margin-top: -20vh;
         .part-1{
-            background: url(../images/Bricklane_Ifte_Choudhury.jpg) left top no-repeat;
+            background: url(../images/Bricklane_Ifte_Choudhury2.png) left top no-repeat;
             background-attachment: fixed;
             background-size: cover;
             height: 90vh;
             @media only screen and (max-width: 645px){
                 height: 72vh;
+            }
+
+            .heading {
+                transform: translateY(246px);
+
+                @media only screen and (max-width: 645px){
+                    opacity: 0;
+                }
+
+                h1 {
+                    opacity: .8;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 6rem;
+                }
             }
         }
         .part-2{
@@ -80,7 +94,7 @@
                         width: 25%;
                         text-align: center;
                         img {
-                            padding-top: 0;
+                            padding-top: 30%;
                             width: 14vw;
                             transform: translateY(-15%);
                             @media (max-width: 1060px) {
@@ -124,9 +138,9 @@
         padding-top: 50px;
         > div {
             background: url(../images/Untitled-3.png) left top no-repeat;
+            //background: url(../images/contact_bg.jpg) left top no-repeat;
             background-size: cover;
-            transform: translate(30);
-            transform: scale(0.84);
+            transform: scale(0.75);
             border-radius: 10px;
             @media only screen and (max-width: 645px){
                 min-height: 50vh;
@@ -136,7 +150,9 @@
             }
     
             .body {
-                width: 35%;
+                width: 30%;
+                //background: white;
+
                 @media only screen and (max-width: 1000px){
                     width: 45%;
                 }
@@ -150,8 +166,10 @@
                     padding-top: 130px;
     
                     h1 {
-                        font-size: 3.6rem;
+                        font-size: 4rem;
                         text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.1);
+                        transform: scale(1.16);
+
                         span{
                             top: -10%;
                             font-size: 8.6rem;
@@ -173,13 +191,16 @@
                 }
     
                 .text p {
-                    padding: 50px;
-                    padding-bottom: 80px;
-                    width: 120%;
+                    //padding: 120px 160px 80px 80px;
+                    //padding: 100px 50px 0 100px;
+                    padding-bottom: 100px;
+                    padding-left: 30px;
+                    padding-top: 150px;
+                    width: 100%;
                     //font-size: calc(1.8rem + (1.8*0.16)rem);
-                    font-size: 2.14rem;
+                    //font-size: 2.14rem;
                     line-height: 3rem;
-                    //transform: scale(1.16);
+                    transform: scale(1.25) translateX(40px);
     
                     @media only screen and (max-width: 1000px){
                         width: 100%;
@@ -206,7 +227,7 @@
                 margin-top: 15%;
 
                 h1 {
-                    font-size: 3.6rem;
+                    font-size: 4rem;
                     text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.1);
                     span{
                         top: -1%;
@@ -535,11 +556,16 @@
     }
 
     &-footer {
-        height: 140px;
-        background: url("../images/Group 929.png") left top no-repeat;
+        height: 120px;
+        //background: url("../images/Group 929.png") left top no-repeat;
         background-size: contain;
         background-color: #6f6f6f;
+        background: linear-gradient(to right, white 20%, #6f6f6f 21%);
         @include clearfix;
+
+        img {
+            height: 100%;
+        }
     }
 
     &-about {
@@ -743,7 +769,7 @@
             width: 98%;
         }
        
-       .title {
+        .title {
           text-align: center;
           font-family: Raleway, sans-serif;
           text-transform: uppercase;
@@ -751,7 +777,7 @@
           font-size: 36px;
           line-height: 48px;
           padding-bottom: 48px;
-       }
+        }
 
        .contact-form {
             .form-field {
