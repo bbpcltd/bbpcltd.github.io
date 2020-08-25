@@ -24,8 +24,9 @@ p {
 h1 {
     text-align: center;
     padding: 40px 10px;
-    font-family: 'montserrat';
-    font-size: 3.4rem;
+    //font-family: 'montserrat';
+    font-family: 'Product Sans', sans-serif;
+    font-size: 4rem;
     position: relative;
     font-weight: 900;
     color: black;
@@ -40,7 +41,7 @@ h1 {
         //display: none;
         color: black;
         position: absolute;
-        font-size: 4.8rem;
+        font-size: 4.4rem;
         top: 5%;
         left: 50%;
         width: 100%;
