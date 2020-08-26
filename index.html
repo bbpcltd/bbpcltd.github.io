@@ -28,6 +28,24 @@
         .slide {
             border-radius:8px;
         }
+
+        #events-shadow {
+            font-size:69px;
+            margin-top:-8px;
+        }
+
+        #header-image-text {
+            font-size:75px;
+            color:black;
+        }
+
+        #about-background-image {
+            background:url("images/about_new_7.jpg");
+        }
+
+        #introductory-text {
+            padding-top:35px;
+        }
     </style>
 </head>
 
@@ -44,7 +62,7 @@
     <section class="section-home">
         <div class="part-1">
             <div class="heading">
-                <h1 class="center">British Bangladeshi Poetry Collective</h1>
+                <h1 id="header-image-text" class="center">British Bangladeshi Poetry Collective</h1>
             </div>
         </div>
         <div class="part-2">
@@ -55,9 +73,9 @@
                 </div>
                 <div class="body">
                     <img src="images/logo.png" alt="Logo" style="position: absolute; visibility: hidden;">
-                    <div class="imagePart"><img src="images/logoHeader.png" alt="Logo Header"></div>
+                    <div id="logo-div" class="imagePart"><img src="images/logoHeader.png" alt="Logo Header"></div>
                     <div class="textPart">
-                        <p>British Bangladeshi Poetry Collective (BBPC) is made of poets and poetry lovers. We use
+                        <p id="introductory-text">British Bangladeshi Poetry Collective (BBPC) is made of poets and poetry lovers. We use
                             poetry as a tool to expand and explore links between British-Bangladeshi culture and the
                             world. Our work involves performance, writing, translation and publication. Welcome!
 
@@ -77,7 +95,7 @@
         </div>
     </section>
     <section class="section-about">
-        <div>
+        <div id="about-background-image">
             <div class="body">
                 <div class="heading upperStryle">
                     <h1>About<span>About</span></h1>
@@ -94,6 +112,7 @@
                         respect and understanding. We work with poets to collaborate and connect with local communities
                         through performance, workshops and sharing events.<br><br>
                     </p>
+                    <br><br><br><br>
                 </div>
             </div>
         </div>
@@ -115,7 +134,7 @@
 
     <section class="section-events">
         <div class="heading upperStryle">
-            <h1>Events<span>Events</span></h1>
+            <h1>Events<span id="events-shadow">Events</span></h1>
         </div>
         <div class="reading">
             <div class="date">FEB<br><span>20</span></div>
@@ -353,7 +372,7 @@
     </section>
 
     <footer class="section-footer">
-        <img src="../images/logo.png" alt="LOGO">
+        <img src="images/logo.png" alt="LOGO">
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
