@@ -37,6 +37,8 @@
         #header-image-text {
             font-size:75px;
             color:black;
+            text-shadow: 1px 1px 1px #333333;
+            opacity:.8;
         }
 
         #about-background-image {
@@ -46,6 +48,37 @@
         #introductory-text {
             padding-top:35px;
         }
+
+        #about-text {
+            padding-left:35px;
+        }
+
+        #mission {
+            font-size:1.8rem;
+            padding:30px;
+            line-height:3rem;
+            font-family:'Product Sans','sans-serif';
+            text-align:justify;
+        }
+
+
+
+        #mission li {
+            padding-left: 1em;
+        }
+
+        #main-footer {
+            background:#212529;
+        }
+
+        #main-footer img {
+            position:relative;
+            top:15px;
+            left:10px;
+            height:90px;
+            border-radius:4px;
+        }
+
     </style>
 </head>
 
@@ -101,7 +134,7 @@
                     <h1>About<span>About</span></h1>
                 </div>
                 <div class="text">
-                    <p>British Bangladeshi Poetry Collective (BBPC) is a non-profit organisation based in London, UK. We
+                    <p id="about-text">British Bangladeshi Poetry Collective (BBPC) is a non-profit organisation based in London, UK. We
                         target our work in the communities that need help in the area of social cohesion, working with
                         local partners to deliver solutions using language and poetry. We hope to create long-term
                         change in communities where low levels of literacy are entrenched, intergenerational tension is
@@ -112,7 +145,6 @@
                         respect and understanding. We work with poets to collaborate and connect with local communities
                         through performance, workshops and sharing events.<br><br>
                     </p>
-                    <br><br><br><br>
                 </div>
             </div>
         </div>
@@ -126,9 +158,20 @@
             <div class="image"><img src="images/Untitled-1.png" alt="Mission"></div>
         </div>
         <div class="text"><img src="images/Rectangle 96.png" alt="">
-            <p>British Bangladeshi Poetry Collective (BBPC) is made of poets and poetry lovers. We are British,
-                British-Bangladeshi, Bangladeshis around the globe. We hope to expand and explore links between
-                British-Bangladeshi poets to the world through performance, writing and translation. Welcome!.</p>
+            <ul id="mission">
+                <li>
+                    Use poetry to create a safe space for people and communities to connect, share and have a dialogue with each other. Using poetry performances and workshops of different language and cultures encourage social cohesion and growth
+                </li>
+                <li>
+                    Celebrate the creativity and the cultural diversity of the multi-cultural communities in the UK using poetry as a tool.
+                </li>
+                <li>
+                    To showcase the British Bangladeshi poetry scene as well as others marginalised poetry groups to mainstream British audience
+                </li>
+                <li>
+                    To portray the strength of poetry as a medium to bridge the gaps.
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -371,7 +414,7 @@
         </script>
     </section>
 
-    <footer class="section-footer">
+    <footer id="main-footer" class="section-footer">
         <img src="images/logo.png" alt="LOGO">
     </footer>
 
