@@ -15,84 +15,156 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <style>
+        .fotorama__wrap {
+            margin: 0 auto;
+        }
+
+        .heading span {
+            top:-1%;
+            font-size:7.4rem;
+        }
+
+        #main-footer {
+            background:#212529;
+        }
+
+        #main-footer img {
+            position:relative;
+            top:15px;
+            left:10px;
+            height:90px;
+            border-radius:3px;
+        }
+    </style>
 </head>
 
 <body>
-    <section class="section-events-header">
-        <div class="part">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/95563773_559773151614823_3468508974276411392_n.jpg"
-                            alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/95178786_273220290743763_6705793732723081216_n.jpg"
-                            alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/95536338_166766818050921_7254454085137465344_n.jpg"
-                            alt="Third slide">
-                    </div>
-                </div>
-            </div>
+    <div class="container text-center center-block">
+        <br>
+        <div class="heading">
+            <h1>Photos<span>Photos</span></h1>
         </div>
-    </section>
-
-    <section class="section-events-middle">
-        <img src="images/events.jpg" alt="Events">
-    </section>
-
-    <section class="section-events-last">
-        <h1>Upcoming Events</h1>
-        <div class="calender">
-            <div class="month">
-                <h1 id="calender_heading">JUNE - 2020</h1>
-                <span class="day">1</span>
-                <span class="day">2</span>
-                <span class="day">3</span>
-                <span class="day">4</span>
-                <span class="day">5</span>
-                <span class="day">6</span>
-                <span class="day">7</span>
-                <span class="day">8</span>
-                <span class="day">9</span>
-                <span class="day">10</span>
-                <span class="day">11</span>
-                <span class="day">12</span>
-                <span class="day">13</span>
-                <span class="day">14</span>
-                <span class="day">15</span>
-                <span class="day">16</span>
-                <span class="day">17</span>
-                <span class="day">18</span>
-                <span class="day">19</span>
-                <span class="day">20</span>
-                <span class="day">21</span>
-                <span class="day">22</span>
-                <span class="day">23</span>
-                <span class="day">24</span>
-                <span class="day">25</span>
-                <span class="day">26</span>
-                <span class="day">27</span>
-                <span class="day">28</span>
-                <span class="day event"><a href="#lightbox">29</a></span>
-                <span class="day">30</span>
-                <span class="day">31</span>
-                <div class="clearfix"></div>
-
-                <div id="lightbox">
-                    <div class="event_details">
-                        <h1>Event Name</h1>
-                        <h3>Date: 24 June, 2020</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel facilis voluptate voluptas quia officiis blanditiis inventore sunt in quis distinctio. Cum, quas! Aliquam accusamus recusandae quas iure, nemo aut nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae ipsam aperiam neque necessitatibus reiciendis laudantium labore ipsum quisquam ex vero iusto eius illum vitae, quis nemo optio sapiente debitis?</p>
-                        <a class="btn" href="#calender_heading">Close</a>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+        <div class='fotorama-wrap'>
+            <div class='fotorama' data-nav='thumbs' data-thumbheight="80px" data-thumbwidth="100px" height="70%">
 
+            <img src="album/1.jpg">
+            <img src="album/2.jpg">
+            <img src="album/3.jpg">
+            <img src="album/4.jpg">
+            <img src="album/5.jpg">
+            <img src="album/6.jpg">
+            <img src="album/7.jpg">
+            <img src="album/8.jpg">
+            <img src="album/9.jpg">
+            <img src="album/10.jpg">
+            <img src="album/11.jpg">
+            <img src="album/12.jpg">
+            <img src="album/13.jpg">
+            <img src="album/14.jpg">
+            <img src="album/15.jpg">
+            <img src="album/16.jpg">
+            <img src="album/17.jpg">
+            <img src="album/18.jpg">
+            <img src="album/19.jpg">
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--<section class="section-events-header">-->
+        <!--<div class="part">-->
+            <!--<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">-->
+                <!--<div class="carousel-inner">-->
+                    <!--<div class="carousel-item active">-->
+                        <!--<img class="d-block w-100" src="album/1.jpg"-->
+                            <!--alt="First slide">-->
+                    <!--</div>-->
+                    <!--<div class="carousel-item">-->
+                        <!--<img class="d-block w-100" src="images/95178786_273220290743763_6705793732723081216_n.jpg"-->
+                            <!--alt="Second slide">-->
+                    <!--</div>-->
+                    <!--<div class="carousel-item">-->
+                        <!--<img class="d-block w-100" src="images/95536338_166766818050921_7254454085137465344_n.jpg"-->
+                            <!--alt="Third slide">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+
+    <!--<section class="section-events-middle">-->
+        <!--<img src="images/events.jpg" alt="Events">-->
+    <!--</section>-->
+
+    <!--<section class="section-events-last">-->
+        <!--<h1>Upcoming Events</h1>-->
+        <!--<div class="calender">-->
+            <!--<div class="month">-->
+                <!--<h1 id="calender_heading">JUNE - 2020</h1>-->
+                <!--<span class="day">1</span>-->
+                <!--<span class="day">2</span>-->
+                <!--<span class="day">3</span>-->
+                <!--<span class="day">4</span>-->
+                <!--<span class="day">5</span>-->
+                <!--<span class="day">6</span>-->
+                <!--<span class="day">7</span>-->
+                <!--<span class="day">8</span>-->
+                <!--<span class="day">9</span>-->
+                <!--<span class="day">10</span>-->
+                <!--<span class="day">11</span>-->
+                <!--<span class="day">12</span>-->
+                <!--<span class="day">13</span>-->
+                <!--<span class="day">14</span>-->
+                <!--<span class="day">15</span>-->
+                <!--<span class="day">16</span>-->
+                <!--<span class="day">17</span>-->
+                <!--<span class="day">18</span>-->
+                <!--<span class="day">19</span>-->
+                <!--<span class="day">20</span>-->
+                <!--<span class="day">21</span>-->
+                <!--<span class="day">22</span>-->
+                <!--<span class="day">23</span>-->
+                <!--<span class="day">24</span>-->
+                <!--<span class="day">25</span>-->
+                <!--<span class="day">26</span>-->
+                <!--<span class="day">27</span>-->
+                <!--<span class="day">28</span>-->
+                <!--<span class="day event"><a href="#lightbox">29</a></span>-->
+                <!--<span class="day">30</span>-->
+                <!--<span class="day">31</span>-->
+                <!--<div class="clearfix"></div>-->
+
+                <!--<div id="lightbox">-->
+                    <!--<div class="event_details">-->
+                        <!--<h1>Event Name</h1>-->
+                        <!--<h3>Date: 24 June, 2020</h3>-->
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel facilis voluptate voluptas quia officiis blanditiis inventore sunt in quis distinctio. Cum, quas! Aliquam accusamus recusandae quas iure, nemo aut nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae ipsam aperiam neque necessitatibus reiciendis laudantium labore ipsum quisquam ex vero iusto eius illum vitae, quis nemo optio sapiente debitis?</p>-->
+                        <!--<a class="btn" href="#calender_heading">Close</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+
+    <footer id="main-footer" class="section-footer">
+        <img src="images/logo.png" alt="LOGO">
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
