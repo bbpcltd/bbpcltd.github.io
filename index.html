@@ -18,6 +18,31 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <style>
+
+        @media only screen and (min-width:768px){
+                #main-header {
+                    font-size:4.2rem;
+
+                }
+                #main-header .flexible {
+                    font-size:5rem;
+                }
+
+        p {
+            text-align:left; !important
+        }
+
+        }
+
+
+        @media only screen and (max-width:1000px){
+            #header-logo {
+                padding:0px;
+                margin:0px;
+            }
+
+        }
+
         .innerPart {
             background-color:#fae780;
             padding:35px 15px;
@@ -47,28 +72,32 @@
 
         #introductory-text {
             padding-top:35px;
+            transform:scale(0.97);
         }
 
         #about-text {
             padding-left:35px;
+            line-height:3rem;
+            font-weight:400;
         }
 
         #mission {
-            font-size:1.8rem;
+            font-size:2.179rem;
             padding:30px;
             line-height:3rem;
-            font-family:'Product Sans','sans-serif';
-            text-align:justify;
+            font-family: Calibri,'sans-serif';
+            text-align:left;
         }
 
 
 
         #mission li {
             padding-left: 1em;
+            padding-bottom:1rem;
         }
 
         #main-footer {
-            background:#212529;
+            background:#F4CE00;
         }
 
         #main-footer img {
@@ -78,6 +107,35 @@
             height:90px;
             border-radius:3px;
         }
+
+        #date-text {
+            font-size:4.4rem;
+            line-height:3rem;
+        }
+
+        @media only screen and (min-width:700px){
+        #about-us-shadow {
+            font-size:8rem;
+            left:55%;
+        }}
+
+        @media only screen and (max-width:699px){
+            #about-us-shadow {
+                left:58%;
+            }
+        }
+
+        #Disclaimer {
+            position:relative;
+            top:-20%;
+            margin-top:0px;
+            margin-bottom:0px;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            width:48rem;
+        }
+
 
     </style>
 </head>
@@ -89,24 +147,24 @@
             <a class="fab fa-twitter fa-2x" href="#"></a>
             <a class="fab fa-linkedin-in fa-2x"
                 href="https://www.linkedin.com/company/british-bangladeshi-poetry-collective/"></a>
-            <a class="far fa-envelope fa-2x" href="mailto://eazad8@gmail.com"></a>
+            <a class="far fa-envelope fa-2x" href="mailto://bbpclondon@gmail.com"></a>
         </div>
     </nav>
     <section class="section-home">
         <div class="part-1">
             <div class="heading">
-                <h1 id="header-image-text" class="center">British Bangladeshi Poetry Collective</h1>
+                <!-- <h1 id="header-image-text" class="center">British Bangladeshi Poetry Collective</h1> -->
             </div>
         </div>
         <div class="part-2">
             <div class="centered-box">
                 <div class="heading">
-                    <h1 class="center">British Bangladeshi Poetry Collective<span class="flexible">British Bangladeshi
+                    <h1 class="center" id="main-header">British Bangladeshi Poetry Collective<span class="flexible">British Bangladeshi
                             Poetry Collective</span></h1>
                 </div>
                 <div class="body">
                     <img src="images/logo.png" alt="Logo" style="position: absolute; visibility: hidden;">
-                    <div id="logo-div" class="imagePart"><img src="images/logoHeader.png" alt="Logo Header"></div>
+                    <div id="logo-div" class="imagePart"><img id="header-logo" src="images/logoHeader.png" alt="Logo Header"></div>
                     <div class="textPart">
                         <p id="introductory-text">British Bangladeshi Poetry Collective (BBPC) is made of poets and poetry lovers. We use
                             poetry as a tool to expand and explore links between British-Bangladeshi culture and the
@@ -131,7 +189,7 @@
         <div id="about-background-image">
             <div class="body">
                 <div class="heading upperStryle">
-                    <h1>About<span>About</span></h1>
+                    <h1>&nbsp;&nbsp;About Us<span id="about-us-shadow">About Us</span></h1>
                 </div>
                 <div class="text">
                     <p id="about-text">British Bangladeshi Poetry Collective (BBPC) is a non-profit organisation based in London, UK. We
@@ -180,7 +238,7 @@
             <h1>Events<span id="events-shadow">Events</span></h1>
         </div>
         <div class="reading">
-            <div class="date">FEB<br><span>20</span></div>
+            <div id="date-text" class="date">2019<br>-<br>2020</div>
             <div class="body">
                 <img src="images/ghr.png" alt="">
                 <h1>Poetry Reading</h1>
@@ -415,7 +473,7 @@
     </section>
 
     <footer id="main-footer" class="section-footer">
-        <img src="images/logo.png" alt="LOGO">
+        <p id="Disclaimer">&#169;BBPC Ltd<br>Email: bbpclondon@gmail.com</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

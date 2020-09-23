@@ -1,0 +1,23 @@
+{
+  "name": "bbpc",
+  "version": "1.0.0",
+  "description": "Small Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx node-sass scss -o css --output-style compressed && mv css/style.css css/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaadu/BBPC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xaadu/BBPC/issues"
+  },
+  "homepage": "https://github.com/xaadu/BBPC#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

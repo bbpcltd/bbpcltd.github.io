@@ -24,6 +24,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <style>
+
+        body {
+            background:black;
+        }
         .fotorama__wrap {
             margin: 0 auto;
         }
@@ -34,28 +38,41 @@
         }
 
         #main-footer {
-            background:#212529;
+            background:#F4CE00;
         }
 
-        #main-footer img {
+        #Disclaimer {
             position:relative;
-            top:15px;
-            left:10px;
-            height:90px;
-            border-radius:3px;
+            top:-20%;
+            margin-top:0px;
+            margin-bottom:0px;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            width:48rem;
         }
+
+        #upcoming p {
+            text-align:center;
+            color:#ccc;
+        }
+
+        #back-button  {
+            text-align:center;
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="container text-center center-block">
-        <br>
-        <div class="heading">
-            <h1>Photos<span>Photos</span></h1>
-        </div>
-        </div>
+
+    <section class="section-events">
+                <div class="heading upperStryle">
+                                <h1>Photos<span id="events-shadow">Photos</span></h1>
+                                        </div>
+    </section>
         <div class='fotorama-wrap'>
-            <div class='fotorama' data-nav='thumbs' data-thumbheight="80px" data-thumbwidth="100px" height="70%">
+            <div class='fotorama' data-nav='thumbs' data-thumbheight="80px" data-thumbwidth="100px" height="70%" data-navposition="top">
 
             <img src="album/1.jpg">
             <img src="album/2.jpg">
@@ -78,6 +95,10 @@
             <img src="album/19.jpg">
     </div>
     </div>
+    </div>
+    <div id="upcoming">
+        <p>For latest updates regarding upcoming events, please visit our <a href="#">Twitter</a>, <a href="https://www.facebook.com/bbpclondon">Facebook </a> or <a href="https://www.linkedin.com/company/british-bangladeshi-poetry-collective/">LinkedIn</a>.<br><br></p>
+        <div id="back-button" class="button"><a href="index.html" class="btn btn-2">Back</a></div>
     </div>
     <br>
     <br>
@@ -162,10 +183,10 @@
         <!--</div>-->
     <!--</section>-->
 
-    <footer id="main-footer" class="section-footer">
-        <img src="images/logo.png" alt="LOGO">
-    </footer>
 
+    <footer id="main-footer" class="section-footer">
+        <p id="Disclaimer">&#169;BBPC Ltd<br>Email: bbpclondon@gmail.com<br><br></p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
