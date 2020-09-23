@@ -96,9 +96,26 @@
             padding-bottom:1rem;
         }
 
+
+
+
         #main-footer {
+            display:flex;
             background:#F4CE00;
+            align-items:center;
+            justify-content:center;
+
         }
+
+        #Disclaimer p {
+            margin-top:0px;
+            margin-bottom:0px;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            width:48rem;
+        }
+
 
         #main-footer img {
             position:relative;
@@ -125,16 +142,6 @@
             }
         }
 
-        #Disclaimer {
-            position:relative;
-            top:-20%;
-            margin-top:0px;
-            margin-bottom:0px;
-            text-align:center;
-            margin-left:auto;
-            margin-right:auto;
-            width:48rem;
-        }
 
 
     </style>
@@ -472,8 +479,9 @@
         </script>
     </section>
 
+
     <footer id="main-footer" class="section-footer">
-        <p id="Disclaimer">&#169;BBPC Ltd<br>Email: bbpclondon@gmail.com</p>
+        <div id="Disclaimer"><p>&#169;BBPC Ltd<br>Email: bbpclondon@gmail.com<br><br></p></div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
